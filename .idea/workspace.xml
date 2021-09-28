@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbda7fab-f7b3-48d9-82d8-db01fa00e690" name="Default Changelist" comment="test">
-      <change afterPath="$PROJECT_DIR$/code/001-两数之和-001.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/code_util.go" afterDir="false" />
+    <list default="true" id="cbda7fab-f7b3-48d9-82d8-db01fa00e690" name="Default Changelist" comment="两数之和">
+      <change afterPath="$PROJECT_DIR$/src/util/code_util.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/001-helloworld.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/001-两数之和-001.go" beforeDir="false" afterPath="$PROJECT_DIR$/code/001-两数之和.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/002-test.go" beforeDir="false" afterPath="$PROJECT_DIR$/code/002-两数相加.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/code_util.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +24,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GoLibraries">
+    <option name="urls">
+      <list>
+        <option value="file://$PROJECT_DIR$/.." />
+        <option value="file://$PROJECT_DIR$" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1yXWXd4Rq5jFLvDdHmA6rTyqsFX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -34,11 +43,24 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable..is.expanded" value="false" />
+    <property name="configurable.GoLibrariesConfigurable.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
   </component>
-  <component name="RunManager" selected="Go Build.go build 001-两数之和-001.go">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\Algorithm\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\code\Algorithm\src" />
+      <recent name="D:\code\Algorithm\code\src" />
+      <recent name="D:\code\Algorithm" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.go build 002-两数相加.go">
     <configuration name="go build 001-两数之和-001.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <working_directory value="$PROJECT_DIR$" />
@@ -55,6 +77,14 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="go build 002-两数相加.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/code/002-两数相加.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build 002-test.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <working_directory value="$PROJECT_DIR$" />
@@ -65,6 +95,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build 002-两数相加.go" />
         <item itemvalue="Go Build.go build 001-两数之和-001.go" />
         <item itemvalue="Go Build.go build 002-test.go" />
         <item itemvalue="Go Build.go build 001-helloworld.go" />
@@ -85,16 +116,18 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="两数之和" />
+    <option name="LAST_COMMIT_MESSAGE" value="两数之和" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/code/001-两数之和-001.go</url>
+          <url>file://$PROJECT_DIR$/code/001-两数之和.go</url>
           <line>32</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
