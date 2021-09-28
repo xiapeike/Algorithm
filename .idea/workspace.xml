@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbda7fab-f7b3-48d9-82d8-db01fa00e690" name="Default Changelist" comment="两数之和">
-      <change afterPath="$PROJECT_DIR$/src/util/code_util.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/003-无重复字符的最长子串.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/001-两数之和-001.go" beforeDir="false" afterPath="$PROJECT_DIR$/code/001-两数之和.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/002-test.go" beforeDir="false" afterPath="$PROJECT_DIR$/code/002-两数相加.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/code_util.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +30,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1yXWXd4Rq5jFLvDdHmA6rTyqsFX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -60,7 +59,7 @@
       <recent name="D:\code\Algorithm" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build 002-两数相加.go">
+  <component name="RunManager" selected="Go Build.go build 003-无重复字符的最长子串.go">
     <configuration name="go build 001-两数之和-001.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <working_directory value="$PROJECT_DIR$" />
@@ -93,8 +92,17 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="go build 003-无重复字符的最长子串.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/code/003-无重复字符的最长子串.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build 003-无重复字符的最长子串.go" />
         <item itemvalue="Go Build.go build 002-两数相加.go" />
         <item itemvalue="Go Build.go build 001-两数之和-001.go" />
         <item itemvalue="Go Build.go build 002-test.go" />
@@ -130,6 +138,11 @@
           <url>file://$PROJECT_DIR$/code/001-两数之和.go</url>
           <line>32</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/code/003-无重复字符的最长子串.go</url>
+          <line>12</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
