@@ -6,7 +6,7 @@ import (
 	"strconv"
 )
 
-// 方法一：
+// 方法一：分别遍历两个数组
 func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	var result float64 = 0
 
