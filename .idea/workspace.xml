@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbda7fab-f7b3-48d9-82d8-db01fa00e690" name="Default Changelist" comment="寻找两个有序数组的中位数">
+      <change afterPath="$PROJECT_DIR$/code/005-最长回文子串.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/004-寻找两个正序数组的中位数.go" beforeDir="false" afterPath="$PROJECT_DIR$/code/004-寻找两个正序数组的中位数.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +59,7 @@
       <recent name="D:\code\Algorithm" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build 004-寻找两个正序数组的中位数.go">
+  <component name="RunManager" selected="Go Build.go build 005-最长回文子串.go">
     <configuration name="go build 001-两数之和-001.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
       <working_directory value="$PROJECT_DIR$" />
@@ -73,14 +73,6 @@
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/code/002-两数相加.go" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build 002-test.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="Algorithm" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/code/002-test.go" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
@@ -100,13 +92,21 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="go build 005-最长回文子串.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/code/005-最长回文子串.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build 005-最长回文子串.go" />
         <item itemvalue="Go Build.go build 004-寻找两个正序数组的中位数.go" />
         <item itemvalue="Go Build.go build 003-无重复字符的最长子串.go" />
         <item itemvalue="Go Build.go build 002-两数相加.go" />
         <item itemvalue="Go Build.go build 001-两数之和-001.go" />
-        <item itemvalue="Go Build.go build 002-test.go" />
       </list>
     </recent_temporary>
   </component>
@@ -131,7 +131,8 @@
     <MESSAGE value="两数之和" />
     <MESSAGE value="无重复字符的最长子串" />
     <MESSAGE value="寻找两个有序数组的中位数" />
-    <option name="LAST_COMMIT_MESSAGE" value="寻找两个有序数组的中位数" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -145,6 +146,11 @@
           <url>file://$PROJECT_DIR$/code/003-无重复字符的最长子串.go</url>
           <line>13</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/code/005-最长回文子串.go</url>
+          <line>49</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
