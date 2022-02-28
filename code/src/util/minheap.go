@@ -19,7 +19,8 @@ func minAjust(input []int) {
 	if inputLen <= 1 {
 		return
 	}
-	//最后一个非叶子节点
+	//最后一个非叶子节点到根节点，将小的节点和父亲节点替换
+	// 对于完全二叉树，第一个非叶子节点数组下标为 n/2 -1, n为总结点数。 非叶子节点i的左孩子下标 2*i + 1，右孩子下标 2*i + 2
 	for i := inputLen/2 - 1; i >= 0; i-- {
 		if (2*i+1 <= inputLen-1) && (input[i] >= input[2*i+1]) {
 			input[i], input[2*i+1] = input[2*i+1], input[i]
