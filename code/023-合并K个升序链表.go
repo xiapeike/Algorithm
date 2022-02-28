@@ -7,6 +7,7 @@ package main
 请你将所有链表合并到一个升序链表中，返回合并后的链表。
 */
 import (
+	"container/heap"
 	"fmt"
 	"math"
 )
@@ -29,7 +30,7 @@ func getMinIndex(lists []*ListNode) int {
 	return index
 }
 
-// k指针做法 空间 o(m * n)
+// 递归做法
 func mergeKLists(lists []*ListNode) *ListNode {
 	var index = getMinIndex(lists)
 
@@ -40,6 +41,86 @@ func mergeKLists(lists []*ListNode) *ListNode {
 	lists[index] = lists[index].Next
 	head.Next = mergeKLists(lists)
 	return head
+}
+
+// 两两合并做法
+func mergeKLists2(lists []*ListNode) *ListNode {
+	var pre, cur *ListNode
+	n := len(lists)
+	for i := 0; i < n; i++ {
+		if i == 0 {
+			pre = lists[i]
+			continue
+		}
+		cur = lists[i]
+		pre = merge(pre, cur)
+	}
+	return pre
+}
+
+func merge(l1, l2 *ListNode) *ListNode {
+	head := &ListNode{}
+	cur := head
+	for l1 != nil || l2 != nil {
+		if l1 != nil && l2 != nil {
+			if l1.Val < l2.Val {
+				cur.Next = l1
+				l1 = l1.Next
+			} else {
+				cur.Next = l2
+				l2 = l2.Next
+			}
+			cur = cur.Next
+		} else if l1 != nil {
+			cur.Next = l1
+			break
+		} else {
+			cur.Next = l2
+			break
+		}
+	}
+	return head.Next
+}
+
+type minHeap []*ListNode
+
+func (h minHeap) Len() int           { return len(h) }
+func (h minHeap) Less(i, j int) bool { return h[i].Val < h[j].Val }
+func (h minHeap) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
+func (h *minHeap) Push(x interface{}) {
+	*h = append(*h, x.(*ListNode))
+}
+
+//  所有类型都实现了空接口。这意味着，如果您编写一个函数以 interface{} 值作为参数，那么您可以为该函数提供任何值。
+func (h *minHeap) Pop() interface{} {
+	old := *h
+	n := len(old)
+	x := old[n-1]
+	*h = old[0 : n-1]
+	return x
+}
+
+// 小顶堆做法
+func mergeKLists3(lists []*ListNode) *ListNode {
+	h := new(minHeap)
+	for i := 0; i < len(lists); i++ {
+		if lists[i] != nil {
+			heap.Push(h, lists[i])
+		}
+	}
+
+	dummyHead := new(ListNode)
+	pre := dummyHead
+	for h.Len() > 0 {
+		tmp := heap.Pop(h).(*ListNode)
+		if tmp.Next != nil {
+			heap.Push(h, tmp.Next)
+		}
+		pre.Next = tmp
+		pre = pre.Next
+	}
+
+	return dummyHead.Next
 }
 
 func main() {
@@ -68,7 +149,7 @@ func main() {
 	}
 
 	lists := []*ListNode{l1head.Next, l2head.Next}
-	result := mergeKLists(lists)
+	result := mergeKLists3(lists)
 	for result != nil {
 		fmt.Printf("sum = %+v", *result)
 		result = result.Next
