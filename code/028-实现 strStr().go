@@ -92,7 +92,6 @@ func strStr3(haystack string, needle string) int {
 
 func main() {
 	str := "abaaa"
-	//target := longestPalindrome(str)
 	target := strStr2(str, "aa")
 	fmt.Printf("sum = %v", target)
 }
