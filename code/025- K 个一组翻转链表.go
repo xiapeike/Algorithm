@@ -15,15 +15,13 @@ k是一个正整数，它的值小于或等于链表的长度。
 
 */
 
-import "fmt"
-
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+import (
+	"code/util"
+	"fmt"
+)
 
 // 采用递归的做法
-func reverseKGroup(head *ListNode, k int) *ListNode {
+func reverseKGroup(head *util.ListNode, k int) *util.ListNode {
 	// 找到第k+1节点
 	knode := head
 	if k == 1 {
@@ -41,9 +39,9 @@ func reverseKGroup(head *ListNode, k int) *ListNode {
 	head.Next = reverseKGroup(knode.Next, k)
 
 	// 翻转k-1的结点
-	var swapKnodes func(head *ListNode, k int) *ListNode
-	swapKnodes = func(head *ListNode, k int) *ListNode {
-		resultNode := &ListNode{}
+	var swapKnodes func(head *util.ListNode, k int) *util.ListNode
+	swapKnodes = func(head *util.ListNode, k int) *util.ListNode {
+		resultNode := &util.ListNode{}
 		// 采用头插法逆转链表
 		for i := 0; i < k; i++ {
 			newHead := head.Next
@@ -62,14 +60,14 @@ func reverseKGroup(head *ListNode, k int) *ListNode {
 func main() {
 	nums1 := []int{1, 2, 3, 4, 5}
 
-	var l1head = new(ListNode)
+	var l1head = new(util.ListNode)
 
-	l1 := new(ListNode)
+	l1 := new(util.ListNode)
 	l1.Val = -1
 	l1head = l1
 
 	for i := 0; i < len(nums1); i++ {
-		var node = ListNode{Val: nums1[i]}
+		var node = util.ListNode{Val: nums1[i]}
 		l1.Next = &node
 		l1 = l1.Next
 	}

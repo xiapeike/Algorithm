@@ -2,16 +2,14 @@ package main
 
 // https://leetcode-cn.com/problems/add-two-numbers/
 import (
+	"code/util"
 	"fmt"
 )
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+// ListNode define
 
-func addTwoNumbers1(l1 *ListNode, l2 *ListNode) *ListNode {
-	var returnList = new(ListNode)
+func addTwoNumbers1(l1 *util.ListNode, l2 *util.ListNode) *util.ListNode {
+	var returnList = new(util.ListNode)
 	head := returnList
 	// 分别得到两个链表长度
 	var l1len, l2len, shortlen int = 0, 0, 0
@@ -42,7 +40,7 @@ func addTwoNumbers1(l1 *ListNode, l2 *ListNode) *ListNode {
 			jinwei = 1
 			newVar = newVar % 10
 		}
-		node := new(ListNode)
+		node := new(util.ListNode)
 		node.Val = newVar
 		returnList.Next = node
 		returnList = returnList.Next
@@ -60,7 +58,7 @@ func addTwoNumbers1(l1 *ListNode, l2 *ListNode) *ListNode {
 			jinwei = 1
 			newVar = newVar % 10
 		}
-		node := new(ListNode)
+		node := new(util.ListNode)
 		node.Val = newVar
 		returnList.Next = node
 		returnList = returnList.Next
@@ -77,14 +75,14 @@ func addTwoNumbers1(l1 *ListNode, l2 *ListNode) *ListNode {
 			jinwei = 1
 			newVar = newVar % 10
 		}
-		node := new(ListNode)
+		node := new(util.ListNode)
 		node.Val = newVar
 		returnList.Next = node
 		returnList = returnList.Next
 		l2 = l2.Next
 	}
 	if jinwei > 0 {
-		node := new(ListNode)
+		node := new(util.ListNode)
 		node.Val = jinwei
 		returnList.Next = node
 		returnList = returnList.Next
@@ -96,22 +94,22 @@ func addTwoNumbers1(l1 *ListNode, l2 *ListNode) *ListNode {
 func main() {
 	nums1 := []int{0}
 	nums2 := []int{0}
-	var l1head = new(ListNode)
-	var l2head = new(ListNode)
-	l1 := new(ListNode)
+	var l1head = new(util.ListNode)
+	var l2head = new(util.ListNode)
+	l1 := new(util.ListNode)
 	l1.Val = -1
 	l1head = l1
-	l2 := new(ListNode)
+	l2 := new(util.ListNode)
 	l2.Val = -1
 	l2head = l2
 	for i := 0; i < len(nums1); i++ {
-		var node = ListNode{Val: nums1[i]}
+		var node = util.ListNode{Val: nums1[i]}
 		l1.Next = &node
 		l1 = l1.Next
 	}
 
 	for i := 0; i < len(nums2); i++ {
-		var node = ListNode{Val: nums2[i]}
+		var node = util.ListNode{Val: nums2[i]}
 		l2.Next = &node
 		l2 = l2.Next
 	}

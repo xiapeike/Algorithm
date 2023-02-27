@@ -7,18 +7,14 @@ package main
 请你将所有链表合并到一个升序链表中，返回合并后的链表。
 */
 import (
+	"code/util"
 	"container/heap"
 	"fmt"
 	"math"
 )
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
 // 查找所有链表第一个值最小的索引
-func getMinIndex(lists []*ListNode) int {
+func getMinIndex(lists []*util.ListNode) int {
 	index := -1
 	minValue := math.MaxInt8
 	for i, node := range lists {
@@ -31,7 +27,7 @@ func getMinIndex(lists []*ListNode) int {
 }
 
 // 递归做法
-func mergeKLists(lists []*ListNode) *ListNode {
+func mergeKLists(lists []*util.ListNode) *ListNode {
 	var index = getMinIndex(lists)
 
 	if index == -1 {
@@ -91,7 +87,7 @@ func (h *minHeap) Push(x interface{}) {
 	*h = append(*h, x.(*ListNode))
 }
 
-//  所有类型都实现了空接口。这意味着，如果您编写一个函数以 interface{} 值作为参数，那么您可以为该函数提供任何值。
+// 所有类型都实现了空接口。这意味着，如果您编写一个函数以 interface{} 值作为参数，那么您可以为该函数提供任何值。
 func (h *minHeap) Pop() interface{} {
 	old := *h
 	n := len(old)

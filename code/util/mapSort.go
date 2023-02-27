@@ -1,13 +1,13 @@
-package main
+package util
 
 import (
 	"fmt"
 	"sort"
 )
 
-func main() {
-	lockTest()
-}
+//	func main() {
+//		lockTest()
+//	}
 func lockTest() {
 	var mp map[string]int
 	mp = make(map[string]int)
@@ -19,11 +19,12 @@ func lockTest() {
 	mp["3"] = 16
 
 	sortMap(mp)
-	fmt.Println()
+
 	sortMap2(mp)
 }
 
-/**
+/*
+*
 根据key排序
 */
 func sortMap2(mp map[string]int) {
@@ -37,7 +38,8 @@ func sortMap2(mp map[string]int) {
 	}
 }
 
-/**
+/*
+*
 根据value排序
 */
 func sortMap(mp map[string]int) {

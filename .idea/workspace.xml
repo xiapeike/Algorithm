@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="cbda7fab-f7b3-48d9-82d8-db01fa00e690" name="Default Changelist" comment="代码上传">
-      <change afterPath="$PROJECT_DIR$/code/015-三数之和.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/016-最接近的三数之和.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/017-电话号码的字母组合.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/src/util/mapSort.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/src/util/util.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/031-下一个排列.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/032- 最长有效括号.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/sd.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/util/listUtil.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/code_util.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/002-两数相加.go" beforeDir="false" afterPath="$PROJECT_DIR$/code/002-两数相加.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/019-删除链表的倒数第N个结点.go" beforeDir="false" afterPath="$PROJECT_DIR$/code/019-删除链表的倒数第N个结点.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/021-合并两个有序链表.go" beforeDir="false" afterPath="$PROJECT_DIR$/code/021-合并两个有序链表.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/023-合并K个升序链表.go" beforeDir="false" afterPath="$PROJECT_DIR$/code/023-合并K个升序链表.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/024-两两交换链表中的节点.go" beforeDir="false" afterPath="$PROJECT_DIR$/code/024-两两交换链表中的节点.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/025- K 个一组翻转链表.go" beforeDir="false" afterPath="$PROJECT_DIR$/code/025- K 个一组翻转链表.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/util/mapSort.go" beforeDir="false" afterPath="$PROJECT_DIR$/code/util/mapSort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/util/minheap.go" beforeDir="false" afterPath="$PROJECT_DIR$/code/util/minheap.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/util/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/code/util/util.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,17 +32,22 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file://$PROJECT_DIR$/../../go1.14" />
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../gopath/go1.19.6" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
     <option name="urls">
       <list>
         <option value="file://$PROJECT_DIR$/.." />
         <option value="file://$PROJECT_DIR$" />
+        <option value="file://$PROJECT_DIR$/code" />
       </list>
     </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1yXWXd4Rq5jFLvDdHmA6rTyqsFX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -42,79 +57,120 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DefaultGoTemplateProperty" value="Go File" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="configurable..is.expanded" value="false" />
-    <property name="configurable.GoLibrariesConfigurable.is.expanded" value="true" />
-    <property name="go.import.settings.migrated" value="true" />
-    <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="goland.project.structure" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "configurable..is.expanded": "true",
+    "configurable.GoLibrariesConfigurable.is.expanded": "true",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "D:/code/LeetCode-Go",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "settings.editor.selected.configurable": "com.goide.configuration.GoLibrariesConfigurableProvider"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\Algorithm\code" />
       <recent name="D:\code\Algorithm\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\code\Algorithm\code\src" />
       <recent name="D:\code\Algorithm\code\util" />
       <recent name="D:\code\Algorithm\code" />
+      <recent name="D:\code\Algorithm\code\src\util" />
+      <recent name="D:\code\Algorithm\code\src" />
       <recent name="D:\code\Algorithm\src" />
-      <recent name="D:\code\Algorithm" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build 017-电话号码的字母组合.go">
-    <configuration name="go build 015-三数之和.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build 019-删除链表的倒数第N个结点.go">
+    <configuration name="go build 002-两数相加.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/code" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/code/015-三数之和.go" />
       <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/code/002-两数相加.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build 016-最接近的三数之和.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build 019-删除链表的倒数第N个结点.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/code" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/code/016-最接近的三数之和.go" />
       <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/code/019-删除链表的倒数第N个结点.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build 017-电话号码的字母组合.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build 024-两两交换链表中的节点.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/code" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/code/017-电话号码的字母组合.go" />
       <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/code/024-两两交换链表中的节点.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build mapSort.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build 025- K 个一组翻转链表.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/code" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/util/mapSort.go" />
       <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/code/025- K 个一组翻转链表.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build util" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build code" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Algorithm" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/code" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/code/src/util/code_util.go" />
-      <package value="util" />
+      <package value="code" />
       <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/code/024-两两交换链表中的节点.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build code/" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$/code" />
+      <method v="2" />
+    </configuration>
+    <configuration name="1. Two Sum.go 1. Two Sum_test.go" type="GoTestRunConfiguration" factoryName="Go Test" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <working_directory value="$PROJECT_DIR$/code/0001.Two-Sum" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/code/0001.Two-Sum/1. Two Sum.go|$PROJECT_DIR$/code/0001.Two-Sum/1. Two Sum_test.go" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <configuration name="1. Two Sum_test.go 1. Two Sum.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Algorithm" />
+      <working_directory value="$PROJECT_DIR$/code/0001.Two-Sum" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/code/0001.Two-Sum/1. Two Sum_test.go|$PROJECT_DIR$/code/0001.Two-Sum/1. Two Sum.go" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.go build code/" />
+      <item itemvalue="Go Build.go build 002-两数相加.go" />
+      <item itemvalue="Go Build.go build 019-删除链表的倒数第N个结点.go" />
+      <item itemvalue="Go Build.go build 024-两两交换链表中的节点.go" />
+      <item itemvalue="Go Build.go build 025- K 个一组翻转链表.go" />
+      <item itemvalue="Go Build.go build code" />
+      <item itemvalue="Go Test.1. Two Sum.go 1. Two Sum_test.go" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build 017-电话号码的字母组合.go" />
-        <item itemvalue="Go Build.go build util" />
-        <item itemvalue="Go Build.go build 016-最接近的三数之和.go" />
-        <item itemvalue="Go Build.go build 015-三数之和.go" />
-        <item itemvalue="Go Build.go build mapSort.go" />
+        <item itemvalue="Go Build.go build 019-删除链表的倒数第N个结点.go" />
+        <item itemvalue="Go Build.go build 002-两数相加.go" />
+        <item itemvalue="Go Build.go build 024-两两交换链表中的节点.go" />
+        <item itemvalue="Go Build.go build 025- K 个一组翻转链表.go" />
+        <item itemvalue="Go Build.go build code" />
       </list>
     </recent_temporary>
   </component>
@@ -132,7 +188,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
@@ -143,6 +198,14 @@
     <MESSAGE value="最长回文子串" />
     <MESSAGE value="代码上传" />
     <option name="LAST_COMMIT_MESSAGE" value="代码上传" />
+  </component>
+  <component name="VgoProject">
+    <environment>
+      <map>
+        <entry key="GOPROXY" value="https://goproxy.io,direct" />
+      </map>
+    </environment>
+    <settings-migrated>true</settings-migrated>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -174,18 +237,48 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/code/017-电话号码的字母组合.go</url>
-          <line>33</line>
+          <line>32</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/code/017-电话号码的字母组合.go</url>
-          <line>67</line>
+          <url>file://$PROJECT_DIR$/code/019-删除链表的倒数第N个结点.go</url>
+          <line>11</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/code/017-电话号码的字母组合.go</url>
-          <line>55</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/code/020-有效的括号.go</url>
+          <line>32</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/code/026-删除有序数组中的重复项.go</url>
+          <line>24</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/code/028-实现 strStr().go</url>
+          <line>45</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/code/028-实现 strStr().go</url>
+          <line>72</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/code/028-实现 strStr().go</url>
+          <line>106</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/code/031-下一个排列.go</url>
+          <line>43</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/code/032- 最长有效括号.go</url>
+          <line>10</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

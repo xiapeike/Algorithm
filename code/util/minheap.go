@@ -1,8 +1,4 @@
-package main
-
-import (
-	"fmt"
-)
+package util
 
 func heapSort(input []int) {
 	inputLen := len(input)
@@ -31,9 +27,10 @@ func minAjust(input []int) {
 	}
 }
 
-func main() {
-	testSlice := []int{2, 3, 1, 4, 5, 6, 2, 1, 23, 43, 1, 32, 3, 5, 2, 1, 8, 54, 4, 0}
-	fmt.Println(testSlice)
-	heapSort(testSlice)
-	fmt.Println(testSlice)
-}
+//
+//func main() {
+//	testSlice := []int{2, 3, 1, 4, 5, 6, 2, 1, 23, 43, 1, 32, 3, 5, 2, 1, 8, 54, 4, 0}
+//	fmt.Println(testSlice)
+//	heapSort(testSlice)
+//	fmt.Println(testSlice)
+//}
