@@ -17,24 +17,19 @@ func removeDuplicates(nums []int) int {
 	if len(nums) == 1 {
 		return 1
 	}
-	if len(nums) == 0 {
-		return 0
-	}
-
-	index := 1 // 用于控制当前插入的位置
+	index := 1
 	for i := 1; i < len(nums); i++ {
-		if nums[i-1] != nums[i] {
+		if nums[i] != nums[i-1] {
 			nums[index] = nums[i]
 			index++
+
 		}
 	}
-
 	return index
 }
 
 func main() {
 	input := []int{1, 1, 2}
-	//target := longestPalindrome(str)
 	result := removeDuplicates(input)
 	fmt.Printf("result = %v", result)
 }
