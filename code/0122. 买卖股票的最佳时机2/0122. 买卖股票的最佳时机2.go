@@ -14,7 +14,7 @@ https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/?envType=study-p
 */
 
 /*
-将每一段的上升的值都加在一起
+将每一段的上升区间的值都加在一起
 */
 func maxProfit(prices []int) int {
 	result := 0
