@@ -1,6 +1,7 @@
 package main
 
 import (
+	"code/util"
 	"fmt"
 )
 
@@ -30,8 +31,29 @@ func canJump055(nums []int) bool {
 	}
 	return dp[len(nums)-1]
 }
+
+/*
+贪心算法
+遍历数组，判断每一次覆盖范围是否会变大，直到覆盖到最后一位
+*/
+func canJump0552(nums []int) bool {
+	cover_range := 0
+
+	for i := 0; i < len(nums); i++ {
+		if i <= cover_range {
+			cover_range = util.Max(nums[i]+i, cover_range)
+		}
+	}
+
+	if cover_range >= len(nums)-1 {
+		return true
+	}
+
+	return false
+}
+
 func main() {
-	input := []int{3, 2, 1, 0, 4}
-	result := canJump055(input)
+	input := []int{2, 3, 1, 1, 4}
+	result := canJump0552(input)
 	fmt.Printf("result = %v", result)
 }
