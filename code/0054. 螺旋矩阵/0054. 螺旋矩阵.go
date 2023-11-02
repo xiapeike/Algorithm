@@ -144,8 +144,39 @@ func spiralOrder0542(matrix [][]int) []int {
 	return order
 }
 
+/*
+重写
+*/
+func spiralOrder0543(matrix [][]int) []int {
+	var result []int
+	direct := [][]int{[]int{0, 1}, []int{1, 0}, []int{0, -1}, []int{-1, 0}}
+	direct_index := 0
+	m, n := len(matrix), len(matrix[0])
+	visit := make([][]int, m)
+	for i := 0; i < m; i++ {
+		visit[i] = make([]int, n)
+		for j := 0; j < n; j++ {
+			visit[i][j] = 0
+		}
+	}
+	x, y := 0, 0
+	for i := 0; i < m*n; i++ {
+		result = append(result, matrix[x][y])
+		visit[x][y] = 1
+		new_x, new_y := x+direct[direct_index][0], y+direct[direct_index][1]
+		if new_x < 0 || new_x >= m || new_y < 0 || new_y >= n || visit[new_x][new_y] == 1 {
+			direct_index = (direct_index + 1) % len(direct)
+			new_x, new_y = x+direct[direct_index][0], y+direct[direct_index][1]
+		}
+		x, y = new_x, new_y
+
+	}
+
+	return result
+
+}
 func main() {
-	input := [][]int{{3}, {5}, {9}}
-	result := spiralOrder054(input)
+	input := [][]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}
+	result := spiralOrder0543(input)
 	fmt.Printf("result = %v", result)
 }
