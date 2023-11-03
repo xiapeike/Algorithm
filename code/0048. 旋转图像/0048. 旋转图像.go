@@ -64,8 +64,36 @@ func rotate0483(matrix [][]int) [][]int {
 	return matrix
 }
 
+/*
+重写
+先对角线互换
+再上下互相
+*/
+func rotate0484(array [][]int) int {
+	n := len(array)
+	for i := 0; i < n; i++ {
+		for j := i; j < n; j++ {
+			temp := array[i][j]
+			array[i][j] = array[j][i]
+			array[j][i] = temp
+		}
+	}
+	fmt.Printf("array1 = %v", array)
+	for i := 0; i < n; i++ {
+		for j := 0; j < n/2; j++ {
+			temp := array[i][j]
+			array[i][j] = array[i][n-j-1]
+			array[i][n-j-1] = temp
+		}
+	}
+
+	fmt.Printf("array = %v", array)
+	return 0
+
+}
+
 func main() {
 	input := [][]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}
-	result := rotate048(input)
+	result := rotate0484(input)
 	fmt.Printf("result = %v", result)
 }
