@@ -75,8 +75,54 @@ func trap0422(height []int) int {
 	return res
 }
 
+/*
+重写
+给定 n 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。
+计算每个柱子的左边界和右边界
+取左右边界最小值 - 该柱子的高度 = 该柱子能够乘的水
+
+如何计算每个柱子的左、右边界？
+左边界计算：
+
+	初始化左边界 left_h = h[0]
+	从左到右遍历，若h[i]<h[i-1] 那么i的左边界left[i] = left_h 否则 left_h = height[i] ， left[i]= left_h
+*/
+func trap3(height []int) int {
+	n := len(height)
+	left := make([]int, n)
+	left_h := height[0]
+	for i := 1; i < n-1; i++ {
+		if height[i] < left_h {
+			left[i] = left_h
+		} else {
+			left_h = height[i]
+			left[i] = left_h
+		}
+	}
+
+	right := make([]int, n)
+	right_h := height[n-1]
+	for i := n - 2; i >= 0; i-- {
+		if height[i] < right_h {
+			right[i] = right_h
+		} else {
+			right_h = height[i]
+			right[i] = right_h
+		}
+	}
+
+	result := 0
+	for i := 1; i < n-1; i++ {
+		if util.Min(left[i], right[i])-height[i] > 0 {
+			result += util.Min(left[i], right[i]) - height[i]
+		}
+	}
+
+	return result
+
+}
 func main() {
 	input := []int{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1}
-	result := trap042(input)
+	result := trap3(input)
 	fmt.Printf("result = %v", result)
 }
